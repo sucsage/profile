@@ -77,7 +77,7 @@ export default function ProjectsClient() {
         });
 
         // 3) โหลดฐานข้อมูล (ensure no cache)
-        const res = await fetch("/data.sqlite", { cache: "no-store" });
+        const res = await fetch("/profile/data.sqlite", { cache: "no-store" });
         if (!res.ok) throw new Error(`โหลด DB ไม่สำเร็จ: HTTP ${res.status}`);
         const buf = await res.arrayBuffer();
         const db = new SQL.Database(new Uint8Array(buf));

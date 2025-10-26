@@ -129,7 +129,7 @@ export default function ONNXClassifier() {
     try {
       // 1️⃣ โหลดโมเดล
       ort.env.logLevel = 'error' // หรือ 'fatal' เพื่อให้เงียบสุด
-      const session = await ort.InferenceSession.create('/logreg_tfidf_keyword_model.onnx', {
+      const session = await ort.InferenceSession.create('/profile/logreg_tfidf_keyword_model.onnx', {
         executionProviders: ['wasm'],
       })
 
