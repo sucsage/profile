@@ -2,12 +2,12 @@
   "name": "all_template",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sucsage.github.io/profile",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "lint": "eslint"
+    "export:pages": "NODE_ENV=production npm run build && npx next export",
+    "serve": "npx serve out"
   },
   "dependencies": {
     "@huggingface/transformers": "^3.7.5",

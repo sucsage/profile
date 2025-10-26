@@ -338,9 +338,6 @@ function HireForm({
         'https://script.google.com/macros/s/AKfycbwjDt25M_Hyvzxg4kELqi7Hm7Wez_ow0TfKeCR3OIdzMw7cXKuCu490d9WZ-LaBZbf0Fg/exec',
         {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
           body: JSON.stringify({
             name,
             email,
